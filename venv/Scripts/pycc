@@ -1,0 +1,3 @@
+#!D:\Deployment MFCC\venv\Scripts\python.exe
+from numba.pycc import main
+main()

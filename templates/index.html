@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementasi Penelitian Akhir</title>
+
+    <link rel="icon" href="/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        
+        body {
+            background-color: #000;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        video {
+            z-index: 50;
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            margin: 0;
+            opacity: 0.3;
+        }
+
+        div {
+            z-index: 100;
+            position: relative;
+        }
+
+        h1 {
+            font-family: "PT Sans Narrow",sans-serif;
+            font-weight: 400;
+            font-size: 4vmax;
+            line-height: 4.2vmax;
+        }
+
+        h2 {
+            font-family: "PT Sans Narrow",sans-serif;
+            font-weight: 400;
+            font-size: 5vmax;
+            line-height: 5vmax;
+        }
+
+        p {
+            font-family: "PT Sans Narrow",sans-serif;
+            font-size: 1.8vmax;
+            line-height: 2.2vmax;
+            margin: 3px;
+        }
+
+        span {
+            background-color: #000;
+            display: inline-block;
+            padding: 2px 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <main class="w3-cell w3-cell-middle w3-container w3-center">
+        
+        <div class="">
+            <h1 class="w3-text-white ca-font-medium ca-pt-sans">
+                <span>Implementasi Penelitian Akhir</span>
+            </h1>
+        </div>
+
+
+        <div class="section no-pad-bot" id="index-banner">
+          <div class="row center">
+            <br><br>
+            <h1 class="header center orange-text" style="color: #ffffff">Klasifikasi Jenis Suara Manusia Berdasarkan Frekuensi Fundamental Dengan Menggunakan Metode Rad Berbasis Web</h1>
+            <div class="row">
+              <form action='/predict' method="POST" class="col s12" enctype="multipart/form-data">
+                <div class="row form-group">
+                  <div class="col col-md-3" style="color: #ffffff"><label for="file-input" class=" form-control-label">File Input</label></div>
+                  <div class="col col-md-3" style="color: #ffffff"><input type="file" id="file" name="file" class="form-control-file">
+                  </div>
+                </div>
+                <br>
+                <div class="row center">
+                  <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+                </div>
+              </form>
+            </div>
+          
+            <div class="card-body text-center" style="color: #ffffff">
+              <h4>Prediksi : <i> {{prediction}} </i></h4>
+            </div>
+            
+            <h4 align="center"<b>code by marnaek tobi</b></h4>
+            <br>
+          
+          </div>
+      </div>
+
+        <video preload="auto" autoplay="true" muted loop="true">
+            <source src="https://codeadam.ca/static/media/home-video.6057a6c8ab306b428d78.mp4">
+        </video>
+
+    </main>
+    
+</body>
+</html>
